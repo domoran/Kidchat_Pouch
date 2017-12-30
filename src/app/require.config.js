@@ -9,7 +9,6 @@ var require = {
         "signals":              "../node_modules/signals/dist/signals.min",
         "pouchdb":              "../node_modules/pouchdb/dist/pouchdb",
         "pouchdb.auth":         "../node_modules/pouchdb-authentication/dist/pouchdb.authentication",
-        "db":                   "app/db.config",
         "text":                 "../node_modules/requirejs-text/text"
     }
 };

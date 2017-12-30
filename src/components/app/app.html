@@ -1,2 +1,5 @@
-<nav-bar params="route: route"></nav-bar>
-<div id="page" class="container" data-bind="component: { name: route().page, params: route }"></div>
+<nav-bar params="route: route, currentUser:currentUser"></nav-bar>
+
+<div id="page" class="container" data-bind="component: { name: route().page, params: $component }"></div>
+
+<!-- pre data-bind="text: ko.toJSON($component,null,2)"></pre-->

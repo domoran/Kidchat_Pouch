@@ -7,6 +7,9 @@ define(['knockout', 'text!./nav-bar.html'], function(ko, template) {
     // But in most apps, you'll want some viewmodel logic to determine what navigation options appear.
 
     this.route = params.route;
+
+    this.currentUser = params.currentUser;
+    console.log("Nav Bar", params);
   }
 
   return { viewModel: NavBarViewModel, template: template };

@@ -1,0 +1,18 @@
+<!-- ko if: isLogged() === false -->
+<form class="navbar-form form-inline pull-right" data-bind="submit: login">
+    <input type="text" placeholder="Benutzer" data-bind="value:username">
+    <input type="password" placeholder="Passwort" data-bind="value:password">
+    <button type="submit" class="btn">Einloggen</button>
+</form>
+<!-- /ko -->
+
+<!-- ko if: isLogged() === true -->
+<ul class="nav navbar-nav navbar-right">
+    <li><p class="navbar-text">Hallo, <span data-bind="text:currentUser().name"></span></p></li>
+    <li>
+      <p class="navbar-btn">
+        <a href="#" class="btn btn-default" data-bind="click: logout">Ausloggen</a>
+      </p>
+    </li>
+</ul>
+<!-- /ko -->
